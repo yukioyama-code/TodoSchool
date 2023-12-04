@@ -1,0 +1,81 @@
+create database mensagemRandom;
+use mensagemRandom;
+
+create table mensagem(
+id int not null auto_increment,
+texto varchar (5000) not null,
+autor varchar (5000) not null,
+primary key (id));
+
+INSERT INTO mensagem (texto, autor) VALUES ('O material escolar mais barato que existe na praça é o professor.', 'Jô Soares');
+INSERT INTO mensagem (texto, autor) VALUES ('As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.', 'Zig Ziglar');
+INSERT INTO mensagem (texto, autor) VALUES ('Motivação é a arte de fazer as pessoas fazerem o que você quer que elas façam porque elas o querem fazer.', 'Dwight Eisenhower');
+INSERT INTO mensagem (texto, autor) VALUES ('Toda ação humana, quer se torne positiva ou negativa, precisa depender de motivação.', 'Dalai Lama');
+INSERT INTO mensagem (texto, autor) VALUES ('A verdadeira motivação vem de realização, desenvolvimento pessoal, satisfação no trabalho e reconhecimento.', 'Frederick Herzberg');
+INSERT INTO mensagem (texto, autor) VALUES ('Eu faço da dificuldade a minha motivação. A volta por cima vem na continuação', 'Charlie Brown Jr');
+INSERT INTO mensagem (texto, autor) VALUES ('A educação tem raízes amargas, mas os seus frutos são doces.', 'Aristóteles');
+INSERT INTO mensagem (texto, autor) VALUES ('O homem não é nada além daquilo que a educação faz dele.', 'Immanuel Kant');
+INSERT INTO mensagem (texto, autor) VALUES ('Sessenta anos atrás, eu sabia tudo. Hoje sei que nada sei. A educação é a descoberta progressiva da nossa ignorância.', 'Will Durant');
+INSERT INTO mensagem (texto, autor) VALUES ('A educação para o sofrimento evitaria senti-lo com relação a casos que não o merecem.', 'Carlos Drummond de Andrade');
+INSERT INTO mensagem (texto, autor) VALUES ('Quando você deseja o bem, o bem te deseja também.', 'Autor desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('O tempo voa. Cabe a você ser o piloto.', 'Autor desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('Se você acha que educação é cara, experimente a ignorância.', 'Derek Box');
+INSERT INTO mensagem (texto, autor) VALUES ('O importante não é vencer todos os dias, mas lutar sempre.', 'Waldemar Valle Martins');
+INSERT INTO mensagem (texto, autor) VALUES ('Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!', 'Rui Barbosa');
+INSERT INTO mensagem (texto, autor) VALUES ('É melhor conquistar a si mesmo do que vencer mil batalhas.', 'Buda');
+INSERT INTO mensagem (texto, autor) VALUES ('Quem ousou conquistar e saiu pra lutar, chega mais longe!', 'Charlie Brown Jr');
+INSERT INTO mensagem (texto, autor) VALUES ('Enquanto houver vontade de lutar haverá esperança de vencer.', 'Santo Agostinho');
+INSERT INTO mensagem (texto, autor) VALUES ('Difícil é ganhar um amigo em uma hora; fácil é ofendê-lo em um minuto', 'Provérbio Chinês');
+INSERT INTO mensagem (texto, autor) VALUES ('O medo de perder tira a vontade de ganhar.', 'Mussum');
+INSERT INTO mensagem (texto, autor) VALUES ('Aquele que não tem confiança nos outros, não lhes pode ganhar a confiança', 'Lao-Tsé');
+INSERT INTO mensagem (texto, autor) VALUES ('Escolher o seu tempo é ganhar tempo.', 'Francis Bacon');
+INSERT INTO mensagem (texto, autor) VALUES ('Perder para a razão, sempre é ganhar.', 'Aldo Novak');
+INSERT INTO mensagem (texto, autor) VALUES ('Arriscamo-nos a perder quando queremos ganhar demais.', 'Jean de La Fontaine');
+INSERT INTO mensagem (texto, autor) VALUES ('Muitos sabem ganhar dinheiro, mas poucos sabem gastá-lo.', 'Henry David Thoreau');
+INSERT INTO mensagem (texto, autor) VALUES ('Se você pretende ser rico, pense em economizar tanto quanto em ganhar.', 'Benjamin Franklin');
+INSERT INTO mensagem (texto, autor) VALUES ('O homem digno ganha para viver; o menos honesto vive para ganhar.', 'Textos Judaicos');
+INSERT INTO mensagem (texto, autor) VALUES ('Para ganhar aquilo que vale a pena ter, pode ser necessário perder tudo mais.', 'Bernadette Devlin');
+INSERT INTO mensagem (texto, autor) VALUES ('É necessário ter o caos dentro de si para gerar uma estrela.', 'Friedrich Nietzsche');
+INSERT INTO mensagem (texto, autor) VALUES ('Não existe um caminho para a felicidade. A felicidade é o caminho.', 'Mahatma Gandhi');
+INSERT INTO mensagem (texto, autor) VALUES ('Não confunda briga com luta: briga tem hora para acabar, luta é para a vida inteira.', 'Sérgio Vaz');
+INSERT INTO mensagem (texto, autor) VALUES ('Deixa para trás o que não te leva para frente', 'Autor desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('Os mais fortes de todos os guerreiros são estes dois: tempo e paciência.', 'Leon Tolstói');
+INSERT INTO mensagem (texto, autor) VALUES ('Tempos difíceis não duram. Pessoas fortes duram.', 'John Watson');
+INSERT INTO mensagem (texto, autor) VALUES ('A dúvida já é a resposta.', 'Zagna Fortes');
+INSERT INTO mensagem (texto, autor) VALUES ('Revolucionário é todo aquele que quer mudar o mundo e tem a coragem de começar por si mesmo.', 'Sérgio Vaz');
+INSERT INTO mensagem (texto, autor) VALUES ('Você erra todos os arremessos que não tenta.', 'Michael Jordan');
+INSERT INTO mensagem (texto, autor) VALUES ('Não existem métodos fáceis para resolver problemas difíceis.', 'René Descartes');
+INSERT INTO mensagem (texto, autor) VALUES ('Homens fracos acreditam na sorte. Homens fortes acreditam em causa e efeito.', 'Ralph Waldo Emerson');
+INSERT INTO mensagem (texto, autor) VALUES ('Frágeis usam a violência, e os fortes as ideias.', 'Augusto Cury');
+INSERT INTO mensagem (texto, autor) VALUES ('As estrelas que brilham mais fortes são também as que queimam mais rápido.', 'Gossip Girl');
+INSERT INTO mensagem (texto, autor) VALUES ('Quando perco o telhado não me desespero. Ganho as estrelas.', 'Rosane Fortes');
+INSERT INTO mensagem (texto, autor) VALUES ('O carinho é responsável por nove-décimos de qualquer felicidade sólida e durável existente em nossas vidas.', 'C.S. Lewis');
+INSERT INTO mensagem (texto, autor) VALUES ('Você é livre para fazer as suas escolhas, mas é prisioneiro das consequências.', 'Pablo Neruda');
+INSERT INTO mensagem (texto, autor) VALUES ('Saber encontrar a alegria na alegria dos outros, é o segredo da felicidade.', 'Georges Bernanos');
+INSERT INTO mensagem (texto, autor) VALUES ('Só existe um êxito: a capacidade de levar a vida que se quer.', 'Cristopher Morley');
+INSERT INTO mensagem (texto, autor) VALUES ('Acredite que você pode, assim você já está no meio do caminho.', 'Theodore Roosevelt');
+INSERT INTO mensagem (texto, autor) VALUES ('A amizade é um amor que nunca morre.', 'Mario Quintana');
+INSERT INTO mensagem (texto, autor) VALUES ('Repara bem no que não digo.', 'Paulo Leminski');
+INSERT INTO mensagem (texto, autor) VALUES ('Você não chegou lá ainda, mas olha o tanto que você cresceu!', 'Autor desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('Julgue seu sucesso pelas coisas que você teve que renunciar para conseguir.', 'Dalai Lama');
+INSERT INTO mensagem (texto, autor) VALUES ('Para ver muita coisa é preciso despregar os olhos de si mesmo.', 'Friedrich Nietzsche');
+INSERT INTO mensagem (texto, autor) VALUES ('O que adianta frequentar a igreja se o Deus que você acredita não frequenta o seu coração?', 'Sérgio Vaz');
+INSERT INTO mensagem (texto, autor) VALUES ('A mentira nunca vive o suficiente para envelhecer.', 'Sócrates');
+INSERT INTO mensagem (texto, autor) VALUES ('Não sou dessas que pede muito: apenas quero que nada seja pouco.', 'Autora desconhecida');
+INSERT INTO mensagem (texto, autor) VALUES ('Aos outros, dou o direito de ser como são. A mim, dou o dever de ser cada dia melhor', 'Chico Xavier');
+INSERT INTO mensagem (texto, autor) VALUES ('O único mal irreparável é a morte daqueles que amamos.', 'Romain Rolland');
+INSERT INTO mensagem (texto, autor) VALUES ('Educador é aquele que confecciona a asa e voa junto.', 'Sérgio Vaz');
+INSERT INTO mensagem (texto, autor) VALUES ('Essa é a verdadeira experiência de ser livre: ter a coisa mais importante do mundo sem possuí-la.', 'Paulo Coelho');
+INSERT INTO mensagem (texto, autor) VALUES ('Levanta, sacode a poeira, dá a volta por cima.', 'Paulo Vanzolini');
+INSERT INTO mensagem (texto, autor) VALUES ('Respire fundo e fique atento às surpresas deliciosas que a vida preparou para você!', 'Autor desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('Nem todos os dias são bons, mas há algo bom em cada dia.', 'Desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('Suba o primeiro degrau com fé. Não é necessário que você veja toda a escada, apenas dê o primeiro passo.', 'Martin Luther King');
+INSERT INTO mensagem (texto, autor) VALUES ('Toda manhã você tem duas escolhas: continuar dormindo com seus sonhos ou acordar e persegui-los!', 'Desconhecido');
+INSERT INTO mensagem (texto, autor) VALUES ('O otimismo é a fé em ação. Nada se pode levar a efeito sem otimismo.', 'Helen Keller');
+
+
+
+
+
+
+

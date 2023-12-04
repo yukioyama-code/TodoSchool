@@ -1,0 +1,52 @@
+create database TodoSchool;
+
+use TodoSchool;
+
+create table usuario(
+	CPF varchar(14),
+	nome varchar(50),
+	senha varchar(255),
+	fotoPerfil mediumblob,
+	email varchar(50),
+	telefone varchar(30),
+	grauEnsino varchar(50),
+	primary key(CPF));
+
+	
+create table disciplinas(
+	codigoDisc int not null auto_increment,
+	nome varchar(50),
+	professor varchar(60),
+	eixo varchar(50),
+	emoji varchar(30),
+	fotoCapa varchar(50),
+	cpf_usuario varchar(14),
+	primary key(codigoDisc),
+	foreign key(CPF_usuario) references usuario(CPF));
+	
+create table atividades(
+	codigo int not null auto_increment,
+	dataEntrega date,
+	importancia varchar(3),
+	descricao varchar(150),
+	titulo varchar(80),
+	CPF_usuario varchar(14),
+	nome_Disciplina varchar(50),
+	primary key(codigo),
+	foreign key (CPF_usuario)references usuario(CPF));
+
+create table arquivos(
+	cpf_usuario int,
+	data_upload datetime  DEFAULT CURRENT_TIMESTAMP, 
+	path varchar(100), 
+	nome varchar(100), 
+	primary key(cpf_usuario));
+
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Histórias", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '787.878.787-44');
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Filosofaaiaaa", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '408.215.338-19');
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Filosofiaaa", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '408.215.338-19');
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Filosofiaa", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '787.878.787-44');
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Filosofiaa", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '408.215.338-19')
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Filosofia", "Profa. Ma. Bárbara Thais Abreu dos Santosdes", "Núcleo Comum", '408.215.338-19');
+INSERT INTO disciplinas (nome, professor, eixo, cpf_usuario) VALUES ("Geografia", "Prof. Dr. André Sartori", "Núcleo Comum", '408.215.338-19');
+INSERT INTO atividades (dataEntrega, importancia, descricao, titulo, cpf_usuario, nome_disciplina) VALUES ('2022-06-17', 'nao', 'Atividade Assíncrona sobre Desenvolvimento Sustentável', 'Atividade Desenvolvimento Sustentável', '408.215.338-19', 'Geografia');
